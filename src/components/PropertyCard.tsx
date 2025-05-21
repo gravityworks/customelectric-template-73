@@ -1,14 +1,15 @@
-import { MapPin } from "lucide-react";
+
 import { Card, CardContent } from "./ui/card";
+import { LucideIcon } from "lucide-react";
 
 interface PropertyCardProps {
   image: string;
   title: string;
-  location: string;
-  price: string;
+  description: string;
+  icon: LucideIcon;
 }
 
-const PropertyCard = ({ image, title, location }: PropertyCardProps) => {
+const PropertyCard = ({ image, title, description, icon: Icon }: PropertyCardProps) => {
   return (
     <Card className="overflow-hidden group cursor-pointer border-none">
       <CardContent className="p-0">
@@ -20,11 +21,11 @@ const PropertyCard = ({ image, title, location }: PropertyCardProps) => {
           />
         </div>
         <div className="pt-4">
-          <h3 className="text-lg font-medium text-estate-800">{title}</h3>
-          <div className="flex items-center mt-2 text-estate-500">
-            <MapPin className="w-4 h-4 mr-1" />
-            <span className="text-sm">{location}</span>
+          <div className="flex items-center mb-2">
+            <Icon className="w-5 h-5 mr-2 text-brand-blue" />
+            <h3 className="text-lg font-medium text-estate-800">{title}</h3>
           </div>
+          <p className="text-sm text-estate-500">{description}</p>
         </div>
       </CardContent>
     </Card>
