@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import PropertyGrid from "@/components/PropertyGrid";
 import AboutUs from "@/components/AboutUs";
@@ -22,7 +21,7 @@ const Index = () => {
       <OurVision />
       <section className="py-20 bg-estate-50" id="projects">
         <div className="container mx-auto px-4 max-w-6xl text-center">
-          <h2 className="text-4xl font-display text-estate-800 mb-4">Projects</h2>
+          <h2 className="text-4xl font-display text-estate-800 mb-4">Testimonials</h2>
           <Testimonials />
         </div>
       </section>
