@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // New custom color palette
+        brand: {
+          blue: "#375B8F",
+          charcoal: "#2F2E2E",
+          yellow: "#E7FF91",
+          "yellow-light": "#F8FFE1",
+          offwhite: "#FAF6EF",
+        },
         estate: {
           100: "#F7F7F7",
           200: "#E5E5E5",
@@ -65,8 +74,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        display: ["Playfair Display", "serif"],
+        sans: ["Outfit", "Inter", "sans-serif"],
+        display: ["Oswald", "Playfair Display", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

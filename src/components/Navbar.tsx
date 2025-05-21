@@ -1,3 +1,4 @@
+
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -11,15 +12,15 @@ const Navbar = () => {
     <nav className="absolute w-full z-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="text-2xl font-display text-white">Elite Real Estate</a>
+          <a href="/" className="text-2xl font-display text-brand-offwhite">Elite Real Estate</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#properties" className="text-white hover:text-white/80 transition-colors">Properties</a>
-            <a href="#about" className="text-white hover:text-white/80 transition-colors">About</a>
-            <a href="#testimonials" className="text-white hover:text-white/80 transition-colors">Testimonials</a>
-            <a href="#contact" className="text-white hover:text-white/80 transition-colors">Contact</a>
-            <Button variant="outline" className="text-black border-white bg-white hover:bg-white/90">
+            <a href="#properties" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Properties</a>
+            <a href="#about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</a>
+            <a href="#testimonials" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Testimonials</a>
+            <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
+            <Button variant="secondary" className="font-medium">
               Get Started
             </Button>
           </div>
@@ -28,7 +29,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-white">
+                <Button variant="ghost" size="icon" className="text-brand-offwhite">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
@@ -38,7 +39,7 @@ const Navbar = () => {
                   <a href="#about" className="text-lg">About</a>
                   <a href="#testimonials" className="text-lg">Testimonials</a>
                   <a href="#contact" className="text-lg">Contact</a>
-                  <Button className="w-full text-black bg-white hover:bg-white/90">Get Started</Button>
+                  <Button className="w-full">Get Started</Button>
                 </div>
               </SheetContent>
             </Sheet>
