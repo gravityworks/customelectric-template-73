@@ -1,18 +1,19 @@
+
 import { Check } from "lucide-react";
 
 const OurVision = () => {
   const values = [
     {
-      title: "Elevated Living Spaces",
-      description: "Creating exceptional living environments that blend luxury with functionality.",
+      title: "Quality Workmanship",
+      description: "Delivering exceptional electrical services with attention to detail and safety.",
     },
     {
-      title: "Sustainable Communities",
-      description: "Building eco-conscious developments that respect and enhance their surroundings.",
+      title: "Customer Satisfaction",
+      description: "Providing transparent communication and reliable service that exceeds expectations.",
     },
     {
-      title: "Expert Guidance",
-      description: "Providing professional expertise and personalized service at every step.",
+      title: "Expert Solutions",
+      description: "Offering professional expertise and customized electrical solutions for any project.",
     },
   ];
 
@@ -21,7 +22,7 @@ const OurVision = () => {
       <div className="container mx-auto px-4 max-w-6xl text-center">
         <h2 className="text-4xl font-display text-estate-800 mb-4">Our Vision</h2>
         <p className="text-estate-500 mb-12 mx-auto max-w-2xl">
-          Our mission is to create innovative, sustainable communities that set new standards.
+          Our mission is to provide safe, reliable electrical services while treating every customer's home or business as if it were our own.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {values.map((value, index) => (

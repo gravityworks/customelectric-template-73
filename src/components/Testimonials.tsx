@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -11,17 +12,17 @@ const Testimonials = () => {
     {
       name: "Sarah Johnson",
       role: "Homeowner",
-      text: "Elite Real Estate exceeded all our expectations, delivering exceptional service and phenomenal results. Their expertise and attention to detail made our home buying experience truly remarkable.",
+      text: "Custom Electric exceeded all our expectations, delivering exceptional service and phenomenal results. Their expertise and attention to detail made our electrical upgrade truly remarkable.",
     },
     {
       name: "Michael Chen",
-      role: "Property Investor",
-      text: "Working with Elite Real Estate has been transformative for our investment portfolio. Their market insights and professional guidance have been invaluable.",
+      role: "Business Owner",
+      text: "Working with Custom Electric has been transformative for our commercial property. Their professional team completed the work on time and within budget, with minimal disruption to our business.",
     },
   ];
 
   return (
-    <section className="py-20 bg-estate-50">
+    <section className="py-20 bg-estate-50" id="testimonials">
       <div className="container mx-auto px-4 max-w-6xl text-center">
         <h2 className="text-4xl font-display text-estate-800 mb-4">Testimonials</h2>
         <Carousel className="max-w-4xl mx-auto">

@@ -12,16 +12,16 @@ const Navbar = () => {
     <nav className="absolute w-full z-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="text-2xl font-display text-brand-offwhite">Elite Real Estate</a>
+          <a href="/" className="text-2xl font-display text-brand-offwhite">Custom Electric</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#properties" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Properties</a>
+            <a href="#services" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Services</a>
             <a href="#about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</a>
             <a href="#testimonials" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Testimonials</a>
             <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
             <Button variant="secondary" className="font-medium">
-              Get Started
+              Request Quote
             </Button>
           </div>
 
@@ -35,11 +35,11 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent>
                 <div className="flex flex-col space-y-4 mt-8">
-                  <a href="#properties" className="text-lg">Properties</a>
+                  <a href="#services" className="text-lg">Services</a>
                   <a href="#about" className="text-lg">About</a>
                   <a href="#testimonials" className="text-lg">Testimonials</a>
                   <a href="#contact" className="text-lg">Contact</a>
-                  <Button className="w-full">Get Started</Button>
+                  <Button className="w-full">Request Quote</Button>
                 </div>
               </SheetContent>
             </Sheet>
