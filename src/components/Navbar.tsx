@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Services</a>
             <a href="#about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</a>
-            <a href="#testimonials" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Testimonials</a>
+            <a href="#projects" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Projects</a>
             <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
             <Button variant="secondary" className="font-medium">
               Request Quote
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <div className="flex flex-col space-y-4 mt-8">
                   <a href="#services" className="text-lg">Services</a>
                   <a href="#about" className="text-lg">About</a>
-                  <a href="#testimonials" className="text-lg">Testimonials</a>
+                  <a href="#projects" className="text-lg">Projects</a>
                   <a href="#contact" className="text-lg">Contact</a>
                   <Button className="w-full">Request Quote</Button>
                 </div>
