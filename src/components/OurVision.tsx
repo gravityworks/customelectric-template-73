@@ -8,12 +8,12 @@ const OurVision = () => {
       description: "Delivering exceptional electrical services with attention to detail and safety.",
     },
     {
-      title: "Customer Satisfaction",
-      description: "Providing transparent communication and reliable service that exceeds expectations.",
+      title: "Licensed & Insured",
+      description: "Fully licensed and insured professionals you can trust with your electrical needs for complete peace of mind.",
     },
     {
-      title: "Expert Solutions",
-      description: "Offering professional expertise and customized electrical solutions for any project.",
+      title: "Celebrating 25 Years",
+      description: "A quarter century of dedicated service to the Greater Lansing and Mid-Michigan communities.",
     },
   ];
 
