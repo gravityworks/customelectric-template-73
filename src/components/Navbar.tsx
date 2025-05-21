@@ -12,7 +12,13 @@ const Navbar = () => {
     <nav className="absolute w-full z-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="text-2xl font-display text-brand-offwhite">Custom Electric</a>
+          <a href="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
+              alt="Custom Electric" 
+              className="h-10"
+            />
+          </a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -34,7 +40,14 @@ const Navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent>
-                <div className="flex flex-col space-y-4 mt-8">
+                <div className="flex justify-center mb-8 mt-4">
+                  <img 
+                    src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
+                    alt="Custom Electric" 
+                    className="h-8"
+                  />
+                </div>
+                <div className="flex flex-col space-y-4">
                   <a href="#services" className="text-lg">Services</a>
                   <a href="#about" className="text-lg">About</a>
                   <a href="#projects" className="text-lg">Projects</a>

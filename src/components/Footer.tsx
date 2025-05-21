@@ -7,7 +7,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
-            <h3 className="font-display text-xl mb-4">Custom Electric</h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
+                alt="Custom Electric" 
+                className="h-8 mx-auto md:mx-0"
+              />
+            </div>
             <p className="text-estate-300">
               Licensed and insured electrical services for Mid-Michigan homes and businesses since 1998.
             </p>
