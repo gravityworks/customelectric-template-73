@@ -3,8 +3,20 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-estate-800 text-white py-16" id="contact">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <footer 
+      className="text-white py-16" 
+      id="contact"
+      style={{ 
+        backgroundImage: "url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative"
+      }}
+    >
+      {/* Dark overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <div className="mb-4">
@@ -46,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-estate-700 text-center text-estate-300">
+        <div className="mt-12 pt-8 border-t border-estate-700/50 text-center text-estate-300">
           <p>&copy; {new Date().getFullYear()} Custom Electric Inc. All rights reserved.</p>
         </div>
       </div>
