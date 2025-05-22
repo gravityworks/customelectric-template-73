@@ -1,5 +1,6 @@
 
 import { Button } from "./ui/button";
+
 const Footer = () => {
   return <footer id="contact" className="text-white">
       {/* CTA Section */}
@@ -41,6 +42,13 @@ const Footer = () => {
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
             <div>
+              <div className="mb-4">
+                <img 
+                  src="/lovable-uploads/76bca9d2-5492-4c14-a134-b54bf6fd0cea.png" 
+                  alt="Home Builders Association of Southeastern Michigan" 
+                  className="h-20 mx-auto md:mx-0"
+                />
+              </div>
               <p className="text-estate-300">
                 Licensed and insured electrical services for Mid-Michigan homes and businesses since 1998.
               </p>
@@ -86,4 +94,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
