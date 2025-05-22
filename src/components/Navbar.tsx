@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
@@ -88,7 +89,7 @@ const Navbar = () => {
             </NavigationMenu>
             <Link to="/about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</Link>
             <a href="#projects" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Projects</a>
-            <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
+            <Link to="/contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</Link>
             <Button variant="secondary" className="font-medium">
               Request Quote
             </Button>
@@ -125,7 +126,7 @@ const Navbar = () => {
                   </div>
                   <Link to="/about" className="text-lg">About</Link>
                   <a href="#projects" className="text-lg">Projects</a>
-                  <a href="#contact" className="text-lg">Contact</a>
+                  <Link to="/contact" className="text-lg">Contact</Link>
                   <Button className="w-full">Request Quote</Button>
                 </div>
               </SheetContent>
@@ -165,3 +166,4 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 export default Navbar;
+
