@@ -40,7 +40,7 @@ const AboutUs = () => {
           {/* Image container with extra height to allow for parallax movement without showing gaps */}
           <div className="absolute inset-0 h-[120%] -top-[10%]">
             <img 
-              src="/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png" 
+              src="/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png" 
               alt="Custom Electric Inc. electrician with company truck" 
               className="w-full h-full object-cover"
               style={{
