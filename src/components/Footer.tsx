@@ -30,16 +30,8 @@ const Footer = () => {
       </div>
       
       {/* Main Footer */}
-      <div className="py-16" style={{
-      backgroundImage: "url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      position: "relative"
-    }}>
-        {/* Dark overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        
-        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+      <div className="py-16 bg-brand-charcoal">
+        <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
             <div>
               <div className="mb-4">
