@@ -56,11 +56,14 @@ const Navbar = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-brand-offwhite hover:text-brand-offwhite/80">
+                  <NavigationMenuTrigger className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors bg-transparent hover:bg-transparent">
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                      <ListItem to="/services/commercial" title="Commercial">
+                        Professional electrical services for businesses
+                      </ListItem>
                       <li className="row-span-3">
                         <NavigationMenuLink asChild>
                           <Link
@@ -76,9 +79,6 @@ const Navbar = () => {
                           </Link>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem to="/services/commercial" title="Commercial">
-                        Professional electrical services for businesses
-                      </ListItem>
                       <ListItem to="/services/generator" title="Generator Backup Systems">
                         Never lose power with backup systems
                       </ListItem>
@@ -114,11 +114,11 @@ const Navbar = () => {
                 <div className="flex flex-col space-y-4">
                   <div className="space-y-2">
                     <p className="font-medium mb-1">Services</p>
-                    <Link to="/services/residential" className="block pl-4 py-1 text-sm">
-                      Residential
-                    </Link>
                     <Link to="/services/commercial" className="block pl-4 py-1 text-sm">
                       Commercial
+                    </Link>
+                    <Link to="/services/residential" className="block pl-4 py-1 text-sm">
+                      Residential
                     </Link>
                     <Link to="/services/generator" className="block pl-4 py-1 text-sm">
                       Generator Backup Systems
