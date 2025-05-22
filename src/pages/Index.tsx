@@ -6,6 +6,7 @@ import OurVision from "@/components/OurVision";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return <div className="min-h-screen bg-white">
@@ -16,6 +17,11 @@ const Index = () => {
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-5xl font-display text-estate-800 mb-16">Our Services</h2>
           <PropertyGrid />
+          <div className="mt-12">
+            <Button variant="secondary" size="lg" className="font-medium">
+              View All Services
+            </Button>
+          </div>
         </div>
       </section>
 
