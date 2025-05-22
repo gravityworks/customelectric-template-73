@@ -2,6 +2,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Users } from "lucide-react";
 
 const About = () => {
   return (
@@ -113,6 +115,46 @@ const About = () => {
               <p className="text-estate-600">Lead Technician</p>
             </div>
           </div>
+        </div>
+        
+        {/* Work With Us Section */}
+        <div className="mt-24 mb-16">
+          <h2 className="text-3xl font-display text-estate-800 mb-10 text-center">Work With Us</h2>
+          
+          <Card className="overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* Left side: Image */}
+              <div className="bg-estate-200 h-72 md:h-auto" 
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}>
+              </div>
+              
+              {/* Right side: Content */}
+              <CardContent className="p-8 flex flex-col justify-center">
+                <div className="bg-brand-blue text-white p-3 rounded-full inline-flex w-12 h-12 items-center justify-center mb-6">
+                  <Users className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-display text-estate-800 mb-4">Join Our Team</h3>
+                <p className="text-estate-600 mb-6">
+                  Are you looking to advance your career, begin a new one, or simply get started?
+                  We stay current with licensing, certifications, training, and the latest advancements
+                  in technology and construction through ongoing professional development.
+                </p>
+                <p className="text-estate-600 mb-8">
+                  We are in search of individuals who are self-motivated, trustworthy, reliable, and 
+                  capable of self-management. If you embody these qualities, we'd love to hear from you.
+                </p>
+                <div>
+                  <Button className="bg-brand-blue hover:bg-brand-blue/80">
+                    View Open Positions
+                  </Button>
+                </div>
+              </CardContent>
+            </div>
+          </Card>
         </div>
       </div>
       
