@@ -1,12 +1,22 @@
 
 import { useEffect, useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "./ui/sheet";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,7 +53,40 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Services</a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-brand-offwhite hover:text-brand-offwhite/80">
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                      <li className="row-span-3">
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/services/residential"
+                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-brand-blue/50 to-brand-blue p-6 no-underline outline-none focus:shadow-md"
+                          >
+                            <div className="mb-2 mt-4 text-lg font-medium text-white">
+                              Residential Services
+                            </div>
+                            <p className="text-sm leading-tight text-white/90">
+                              Complete electrical solutions for your home
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <ListItem to="/services/commercial" title="Commercial">
+                        Professional electrical services for businesses
+                      </ListItem>
+                      <ListItem to="/services/generator" title="Generator Backup Systems">
+                        Never lose power with backup systems
+                      </ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <a href="#about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</a>
             <a href="#projects" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Projects</a>
             <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
@@ -69,7 +112,18 @@ const Navbar = () => {
                   />
                 </div>
                 <div className="flex flex-col space-y-4">
-                  <a href="#services" className="text-lg">Services</a>
+                  <div className="space-y-2">
+                    <p className="font-medium mb-1">Services</p>
+                    <Link to="/services/residential" className="block pl-4 py-1 text-sm">
+                      Residential
+                    </Link>
+                    <Link to="/services/commercial" className="block pl-4 py-1 text-sm">
+                      Commercial
+                    </Link>
+                    <Link to="/services/generator" className="block pl-4 py-1 text-sm">
+                      Generator Backup Systems
+                    </Link>
+                  </div>
                   <a href="#about" className="text-lg">About</a>
                   <a href="#projects" className="text-lg">Projects</a>
                   <a href="#contact" className="text-lg">Contact</a>
@@ -83,5 +137,32 @@ const Navbar = () => {
     </nav>
   );
 };
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a"> & { to: string; title: string }
+>(({ className, title, children, to, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <Link
+          to={to}
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </Link>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
 
 export default Navbar;
