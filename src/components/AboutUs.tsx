@@ -1,5 +1,38 @@
 
+import { useEffect, useState } from "react";
+
 const AboutUs = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const calculateParallax = () => {
+    // Get the about section element
+    const aboutSection = document.getElementById('about');
+    if (!aboutSection) return 0;
+    
+    // Calculate the element's position relative to the viewport
+    const rect = aboutSection.getBoundingClientRect();
+    const elementTop = rect.top + window.scrollY;
+    
+    // Calculate how far we've scrolled past the element
+    const relativeScroll = Math.max(0, scrollPosition - elementTop + window.innerHeight);
+    
+    // Return a value that creates a subtle parallax effect
+    return relativeScroll * 0.05;
+  };
+
   return <section className="py-20 bg-estate-50" id="about">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="relative rounded-lg overflow-hidden min-h-[400px] max-w-5xl mx-auto">
@@ -8,6 +41,10 @@ const AboutUs = () => {
             src="/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png" 
             alt="Custom Electric Inc. electrician with company truck" 
             className="w-full h-full object-cover absolute inset-0" 
+            style={{
+              transform: `translateY(${calculateParallax()}px)`,
+              transition: "transform 0.05s ease-out"
+            }}
           />
           
           {/* Dark overlay for better text contrast */}
