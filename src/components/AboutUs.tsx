@@ -13,10 +13,10 @@ const AboutUs = () => {
           {/* Dark overlay for better text contrast */}
           <div className="absolute inset-0 bg-estate-900/60"></div>
           
-          {/* Content overlay */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
+          {/* Content overlay - adjusted padding for mobile */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-8 text-center overflow-y-auto">
             <h2 className="text-4xl font-display text-white mb-4">Our Story</h2>
-            <p className="text-white mb-6 mx-auto max-w-2xl">
+            <p className="text-white mb-6 mx-auto max-w-2xl text-sm sm:text-base">
               In the spring of 98, a young journeyman electrician named Dean took a leap of faith. With just a handful of tools and a small pickup truck, he launched what would become Custom Electric Inc.
               <br /><br />
               From those humble beginnings, Custom Electric has grown into a trusted name in the Greater Lansing and Mid-Michigan areas. Over the years, we've served thousands of customers—handling everything from commercial wiring projects to simple home outlet installations.
