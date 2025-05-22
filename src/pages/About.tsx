@@ -130,7 +130,7 @@ const About = () => {
                 <div className="bg-brand-blue text-white p-3 rounded-full inline-flex w-12 h-12 items-center justify-center mb-6">
                   <Users className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-display text-estate-800 mb-4">Join Our Team</h3>
+                <h3 className="text-2xl font-display text-estate-800 mb-4">Join Our Family</h3>
                 <p className="text-estate-600 mb-6">
                   Are you looking to advance your career, begin a new one, or simply get started?
                   We stay current with licensing, certifications, training, and the latest advancements
