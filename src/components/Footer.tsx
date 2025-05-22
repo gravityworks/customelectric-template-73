@@ -1,5 +1,4 @@
 
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -55,7 +54,6 @@ const Footer = () => {
               <ul className="space-y-2 text-estate-300">
                 <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#testimonials" className="hover:text-white transition-colors">Testimonials</a></li>
                 <li><a href="#careers" className="hover:text-white transition-colors">Careers</a></li>
                 <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
@@ -71,12 +69,28 @@ const Footer = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
-              <div className="flex space-x-4 justify-center md:justify-start">
-                <a href="#" className="hover:text-estate-300 transition-colors"><Facebook className="w-5 h-5" /></a>
-                <a href="#" className="hover:text-estate-300 transition-colors"><Instagram className="w-5 h-5" /></a>
-                <a href="#" className="hover:text-estate-300 transition-colors"><Twitter className="w-5 h-5" /></a>
-                <a href="#" className="hover:text-estate-300 transition-colors"><Linkedin className="w-5 h-5" /></a>
-              </div>
+              <ul className="space-y-2 text-estate-300">
+                <li>
+                  <a 
+                    href="https://www.facebook.com/MICustomElectricInc" 
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Follow us on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://g.page/r/CdGatJZKMUVXEBM/review" 
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Leave us a Review
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-estate-700/50 text-center text-estate-300">
