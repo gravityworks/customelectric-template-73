@@ -1,18 +1,11 @@
-
 import { Button } from "./ui/button";
-
 const Footer = () => {
-  return (
-    <footer id="contact" className="text-white">
+  return <footer id="contact" className="text-white">
       {/* CTA Section */}
       <div className="bg-brand-blue py-12">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="flex items-center mb-8 md:mb-0">
-            <img 
-              src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
-              alt="Custom Electric" 
-              className="h-14" /* Increased size by 75% from h-8 */
-            />
+            <img src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" alt="Custom Electric" className="h-14" /* Increased size by 75% from h-8 */ />
           </div>
           <div className="text-center md:text-left mb-6 md:mb-0 md:mx-4 lg:mx-0">
             <h3 className="text-4xl font-display text-brand-yellow mb-2">Ready to get started?</h3>
@@ -30,15 +23,12 @@ const Footer = () => {
       </div>
       
       {/* Main Footer */}
-      <div 
-        className="py-16" 
-        style={{ 
-          backgroundImage: "url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          position: "relative"
-        }}
-      >
+      <div className="py-16" style={{
+      backgroundImage: "url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative"
+    }}>
         {/* Dark overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         
@@ -68,25 +58,15 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Follow Us</h4>
+              <h4 className="font-semibold mb-4">Connect With Us</h4>
               <ul className="space-y-2 text-estate-300">
                 <li>
-                  <a 
-                    href="https://www.facebook.com/MICustomElectricInc" 
-                    className="hover:text-white transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.facebook.com/MICustomElectricInc" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                     Follow us on Facebook
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://g.page/r/CdGatJZKMUVXEBM/review" 
-                    className="hover:text-white transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://g.page/r/CdGatJZKMUVXEBM/review" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                     Leave us a Review
                   </a>
                 </li>
@@ -98,8 +78,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
