@@ -7,25 +7,25 @@ const Footer = () => {
     <footer id="contact" className="text-white">
       {/* CTA Section */}
       <div className="bg-brand-blue py-12">
-        <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center justify-between">
+        <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="flex items-center mb-8 md:mb-0">
             <img 
               src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
               alt="Custom Electric" 
-              className="h-12" /* Increased size by 50% from h-8 */
+              className="h-14" /* Increased size by 75% from h-8 */
             />
           </div>
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-left mb-6 md:mb-0 md:mx-4 lg:mx-0">
             <h3 className="text-4xl font-display text-brand-yellow mb-2">Ready to get started?</h3>
-            <p className="text-xl mb-6">Let's connect about your next project.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-              <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
-                Request a Quote
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Contact us
-              </Button>
-            </div>
+            <p className="text-xl mb-2 md:mb-0">Let's connect about your next project.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
+              Request a Quote
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              Contact us
+            </Button>
           </div>
         </div>
       </div>
