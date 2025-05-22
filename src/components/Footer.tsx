@@ -23,7 +23,7 @@ const Footer = () => {
             <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
               Request a Quote
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
               Contact us
             </Button>
           </div>
