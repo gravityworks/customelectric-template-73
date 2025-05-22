@@ -2,7 +2,7 @@
 const AboutUs = () => {
   return <section className="py-20 bg-estate-50" id="about">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="relative rounded-lg overflow-hidden aspect-[16/9] max-w-5xl mx-auto">
+        <div className="relative rounded-lg overflow-hidden min-h-[400px] max-w-5xl mx-auto">
           {/* Image as background with overlay */}
           <img 
             src="/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png" 
@@ -13,8 +13,8 @@ const AboutUs = () => {
           {/* Dark overlay for better text contrast */}
           <div className="absolute inset-0 bg-estate-900/60"></div>
           
-          {/* Content overlay - adjusted padding for mobile */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-8 text-center overflow-y-auto">
+          {/* Content overlay - now with padding and no overflow scroll */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-8 text-center">
             <h2 className="text-4xl font-display text-white mb-4">Our Story</h2>
             <p className="text-white mb-6 mx-auto max-w-2xl text-sm sm:text-base">
               In the spring of 98, a young journeyman electrician named Dean took a leap of faith. With just a handful of tools and a small pickup truck, he launched what would become Custom Electric Inc.
