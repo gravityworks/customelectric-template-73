@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -19,9 +19,9 @@ import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
       if (isScrolled !== scrolled) {
@@ -56,7 +56,7 @@ const Navbar = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-brand-offwhite hover:text-brand-offwhite/80">
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-brand-offwhite hover:text-brand-offwhite/80 text-base">
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
