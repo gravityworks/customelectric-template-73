@@ -37,12 +37,12 @@ const AboutUs = () => {
     <section className="py-20 bg-estate-50" id="about">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="relative rounded-lg overflow-hidden min-h-[400px] md:min-h-[450px] max-w-5xl mx-auto">
-          {/* Image container with extra height to allow for parallax movement without showing gaps */}
-          <div className="absolute inset-0 h-[120%] -top-[10%]">
+          {/* Image container with increased height to prevent grey lines */}
+          <div className="absolute inset-0 h-[140%] -top-[20%] overflow-hidden">
             <img 
-              src="/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png" 
+              src="/lovable-uploads/bff570fc-46e3-4080-8f1f-80bd124489d7.png" 
               alt="Custom Electric Inc. electrician with company truck" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
               style={{
                 transform: `translateY(${calculateParallax()}px)`,
                 transition: "transform 0.05s ease-out"

@@ -21,9 +21,11 @@ const Hero = () => {
   return (
     <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 h-[120%] top-0"
         style={{
           backgroundImage: "url('/lovable-uploads/749e0679-b20d-41da-ae3d-4cdd48562e86.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           transform: `translateY(${scrollPosition * 0.15}px)`,
           transition: "transform 0.05s ease-out"
         }}
