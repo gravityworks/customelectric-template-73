@@ -105,87 +105,100 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
-      <main className="flex-grow pt-20">
-        {/* Hero Section */}
-        <div className="bg-estate-100 py-12">
-          <div className="container mx-auto max-w-6xl px-4">
-            <h1 className="text-4xl md:text-5xl font-display text-estate-800 mb-4">{service.title}</h1>
-            <p className="text-xl text-estate-600 max-w-3xl">{service.description}</p>
-          </div>
+      {/* Hero Section with Photo Background and Blue Overlay */}
+      <div className="relative">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100%'
+          }}
+        >
+          <div className="absolute inset-0 bg-brand-blue/70" />
         </div>
         
-        {/* Main Content */}
-        <div className="container mx-auto max-w-6xl px-4 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Gallery Section */}
-            <div>
-              {/* Main Image */}
-              <div className="mb-6 rounded-lg overflow-hidden shadow-lg">
-                <AspectRatio ratio={4/3}>
-                  <img 
-                    src={service.mainImage} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover"
-                  />
-                </AspectRatio>
-              </div>
-              
-              {/* Image Gallery Carousel */}
-              {service.galleryImages.length > 1 && (
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    {service.galleryImages.map((image, index) => (
-                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="p-1">
-                          <AspectRatio ratio={1/1} className="rounded-md overflow-hidden">
-                            <img 
-                              src={image} 
-                              alt={`${service.title} example ${index + 1}`} 
-                              className="w-full h-full object-cover"
-                            />
-                          </AspectRatio>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <div className="flex justify-center mt-4">
-                    <CarouselPrevious className="relative static mr-2" />
-                    <CarouselNext className="relative static ml-2" />
-                  </div>
-                </Carousel>
-              )}
+        <Navbar />
+        
+        {/* Hero Content */}
+        <div className="relative z-10 pt-20 pb-16">
+          <div className="container mx-auto max-w-6xl px-4">
+            <h1 className="text-4xl md:text-5xl font-display text-white mb-4">{service.title}</h1>
+            <p className="text-xl text-white/90 max-w-3xl">{service.description}</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Main Content */}
+      <div className="container mx-auto max-w-6xl px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Gallery Section */}
+          <div>
+            {/* Main Image */}
+            <div className="mb-6 rounded-lg overflow-hidden shadow-lg">
+              <AspectRatio ratio={4/3}>
+                <img 
+                  src={service.mainImage} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
             </div>
             
-            {/* Features and Description */}
-            <div>
-              <h2 className="text-2xl font-display text-estate-800 mb-4">Our Services Include:</h2>
-              <ul className="grid grid-cols-1 gap-3 mb-8">
-                {service.features.map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <Check className="h-5 w-5 text-brand-blue mr-2 mt-1 flex-shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="bg-estate-50 p-6 rounded-lg border border-estate-200">
-                <h3 className="text-xl font-medium text-estate-800 mb-2">Ready to get started?</h3>
-                <p className="mb-4">{service.callToAction}</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-brand-blue hover:bg-brand-blue/80">
-                    Request a Quote
-                  </Button>
-                  <Button variant="secondary">
-                    Call Us Today
-                  </Button>
+            {/* Image Gallery Carousel */}
+            {service.galleryImages.length > 1 && (
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {service.galleryImages.map((image, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1">
+                        <AspectRatio ratio={1/1} className="rounded-md overflow-hidden">
+                          <img 
+                            src={image} 
+                            alt={`${service.title} example ${index + 1}`} 
+                            className="w-full h-full object-cover"
+                          />
+                        </AspectRatio>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="flex justify-center mt-4">
+                  <CarouselPrevious className="relative static mr-2" />
+                  <CarouselNext className="relative static ml-2" />
                 </div>
+              </Carousel>
+            )}
+          </div>
+          
+          {/* Features and Description */}
+          <div>
+            <h2 className="text-2xl font-display text-estate-800 mb-4">Our Services Include:</h2>
+            <ul className="grid grid-cols-1 gap-3 mb-8">
+              {service.features.map((feature, index) => (
+                <li key={index} className="flex items-start">
+                  <Check className="h-5 w-5 text-brand-blue mr-2 mt-1 flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            
+            <div className="bg-estate-50 p-6 rounded-lg border border-estate-200">
+              <h3 className="text-xl font-medium text-estate-800 mb-2">Ready to get started?</h3>
+              <p className="mb-4">{service.callToAction}</p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-brand-blue hover:bg-brand-blue/80">
+                  Request a Quote
+                </Button>
+                <Button variant="secondary">
+                  Call Us Today
+                </Button>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
       
       <Footer />
     </div>
