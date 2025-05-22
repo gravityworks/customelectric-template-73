@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
@@ -87,7 +86,7 @@ const Navbar = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <a href="#about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</a>
+            <Link to="/about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</Link>
             <a href="#projects" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Projects</a>
             <a href="#contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</a>
             <Button variant="secondary" className="font-medium">
@@ -124,7 +123,7 @@ const Navbar = () => {
                       Generator Backup Systems
                     </Link>
                   </div>
-                  <a href="#about" className="text-lg">About</a>
+                  <Link to="/about" className="text-lg">About</Link>
                   <a href="#projects" className="text-lg">Projects</a>
                   <a href="#contact" className="text-lg">Contact</a>
                   <Button className="w-full">Request Quote</Button>
