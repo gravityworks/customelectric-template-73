@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -8,8 +9,28 @@ import {
 } from "./ui/sheet";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 20;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <nav className="absolute w-full z-50">
+    <nav 
+      className={`fixed w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-brand-blue shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-20">
           <a href="/" className="flex items-center">
