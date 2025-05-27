@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -122,7 +123,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Image */}
               <div className="bg-estate-200 h-72 md:h-auto" style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+                backgroundImage: "url('/lovable-uploads/3ccba5f8-568e-4ad3-a4c5-7c22d19b8db0.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}>
