@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -42,10 +41,10 @@ const serviceData = {
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
     mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
     galleryImages: [
-      "/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png",
-      "/lovable-uploads/0cc86266-7867-4628-b0de-a6fa09e4c231.png",
-      "/lovable-uploads/3ccba5f8-568e-4ad3-a4c5-7c22d19b8db0.png",
-      "/lovable-uploads/76bca9d2-5492-4c14-a134-b54bf6fd0cea.png"
+      "/lovable-uploads/76dbaab2-c2c8-43f0-8ba4-eaba0ea310df.png",
+      "/lovable-uploads/ccdbd82b-6c10-4b37-a893-3bcf86fd386e.png",
+      "/lovable-uploads/ee9269ae-6454-45d5-8e72-a9a927ec31d6.png",
+      "/lovable-uploads/af8fe629-d0c4-49cb-b585-def1b9c720a8.png"
     ],
     features: [
       "Commercial electrical installations and renovations",
