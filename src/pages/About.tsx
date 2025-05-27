@@ -3,8 +3,11 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const About = () => {
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       {/* Hero Section with Photo Background and Blue Overlay */}
       <div className="relative">
         <div className="absolute inset-0 z-0" style={{
@@ -119,10 +122,10 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Image */}
               <div className="bg-estate-200 h-72 md:h-auto" style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}>
+                backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}>
               </div>
               
               {/* Right side: Content */}
@@ -141,7 +144,9 @@ const About = () => {
                   capable of self-management. If you embody these qualities, we'd love to hear from you.
                 </p>
                 <div>
-                  <Button className="bg-brand-blue hover:bg-brand-blue/80">Apply Now</Button>
+                  <Button asChild className="bg-brand-blue hover:bg-brand-blue/80">
+                    <Link to="/careers">Apply Now</Link>
+                  </Button>
                 </div>
               </CardContent>
             </div>
@@ -150,6 +155,8 @@ const About = () => {
       </div>
       
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default About;

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
@@ -43,13 +42,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
               alt="Custom Electric" 
               className="h-10"
             />
-          </a>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -166,4 +165,3 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 export default Navbar;
-
