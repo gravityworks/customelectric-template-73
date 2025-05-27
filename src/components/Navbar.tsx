@@ -87,7 +87,6 @@ const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
             <Link to="/about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</Link>
-            <a href="#projects" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Projects</a>
             <Link to="/contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</Link>
             <Button variant="secondary" className="font-medium">
               Request Quote
@@ -124,7 +123,6 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <Link to="/about" className="text-lg">About</Link>
-                  <a href="#projects" className="text-lg">Projects</a>
                   <Link to="/contact" className="text-lg">Contact</Link>
                   <Button className="w-full">Request Quote</Button>
                 </div>
