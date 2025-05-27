@@ -5,7 +5,7 @@ import { Home, Briefcase, BatteryCharging } from "lucide-react";
 const PropertyGrid = () => {
   const properties = [
     {
-      image: "/lovable-uploads/d2d9d44e-7249-4108-a24e-3168fe852da3.png", // Restaurant/commercial space image
+      image: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png", // New commercial space image
       title: "Commercial",
       description: "Professional electrical solutions for businesses of all sizes. From office buildings to retail spaces, we ensure reliable power for your operations.",
       icon: Briefcase,

@@ -40,7 +40,7 @@ const serviceData = {
   commercial: {
     title: "Commercial Electrical Services",
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
-    mainImage: "/lovable-uploads/d2d9d44e-7249-4108-a24e-3168fe852da3.png",
+    mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
     galleryImages: [
       "/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png",
       "/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png",
