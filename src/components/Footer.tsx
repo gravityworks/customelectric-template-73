@@ -1,5 +1,5 @@
-
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return <footer id="contact" className="text-white">
@@ -50,7 +50,7 @@ const Footer = () => {
               <ul className="space-y-2 text-estate-300">
                 <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#careers" className="hover:text-white transition-colors">Careers</a></li>
+                <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
                 <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>

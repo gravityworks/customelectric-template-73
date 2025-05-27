@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -125,8 +126,8 @@ const Contact = () => {
                 <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80">
                   Request a Quote
                 </Button>
-                <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
-                  Apply for a Job
+                <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+                  <Link to="/careers">Apply for a Job</Link>
                 </Button>
               </div>
             </div>
