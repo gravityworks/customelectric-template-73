@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -41,10 +42,10 @@ const serviceData = {
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
     mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
     galleryImages: [
-      "/lovable-uploads/65babee3-1680-4493-952b-d07b720d4fed.png",
-      "/lovable-uploads/1cc1a3f1-e9d9-44d2-a3a0-0d93342ed30d.png",
-      "/lovable-uploads/52213233-a3d1-46ca-b477-8318a55f4bb6.png",
-      "/lovable-uploads/9de20a4e-daf0-464d-8a8b-dbd5bedac69a.png"
+      "/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png",
+      "/lovable-uploads/0cc86266-7867-4628-b0de-a6fa09e4c231.png",
+      "/lovable-uploads/3ccba5f8-568e-4ad3-a4c5-7c22d19b8db0.png",
+      "/lovable-uploads/76bca9d2-5492-4c14-a134-b54bf6fd0cea.png"
     ],
     features: [
       "Commercial electrical installations and renovations",
@@ -122,6 +123,12 @@ const ServicePage = () => {
       title: "Large-Scale Warehouse Lighting",
       description: "Energy-efficient LED lighting retrofit for a 50,000 sq ft distribution warehouse. We replaced outdated fluorescent fixtures with high-efficiency LED lighting systems, resulting in 60% energy savings and dramatically improved visibility for warehouse operations. The project was completed in phases to maintain continuous operations.",
       highlights: ["50,000 sq ft coverage", "60% energy savings", "Improved visibility", "Phased installation"]
+    },
+    {
+      image: "/lovable-uploads/210e2ca5-0c89-4337-8c39-bb13bc386aec.png",
+      title: "Historic Building Renovation",
+      description: "Sensitive electrical restoration of a landmark historic building while preserving its architectural integrity. We carefully integrated modern electrical systems behind original millwork and decorative elements, including custom lighting solutions that complement the building's Art Nouveau design. The project required specialized techniques to maintain the building's historic character.",
+      highlights: ["Historic preservation compliance", "Custom Art Nouveau lighting", "Hidden modern systems", "Architectural integration"]
     }
   ] : [];
 
@@ -233,7 +240,7 @@ const ServicePage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
               {featuredProjects.map((project, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <AspectRatio ratio={4/3}>
