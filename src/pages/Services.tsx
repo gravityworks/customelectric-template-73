@@ -18,12 +18,12 @@ const serviceData = {
   residential: {
     title: "Residential Electrical Services",
     description: "Custom Electric provides a wide range of residential electrical services to keep your home safe, comfortable, and energy-efficient.",
-    mainImage: "/lovable-uploads/2ac8c716-fa77-4c9d-bd73-3304c92acb48.png",
+    mainImage: "/lovable-uploads/fe90b0a3-a45e-4685-931e-1a107ec88997.png",
     galleryImages: [
-      "/lovable-uploads/3498643b-4140-4b06-93a2-a6ad010d44c1.png",
-      "/lovable-uploads/749e0679-b20d-41da-ae3d-4cdd48562e86.png",
-      "/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png",
-      "/lovable-uploads/bff570fc-46e3-4080-8f1f-80bd124489d7.png"
+      "/lovable-uploads/91e4bd0d-dc7b-4aaa-85c6-8929b27b3c79.png",
+      "/lovable-uploads/505e2384-a1b0-4546-9f7d-0787956205d0.png",
+      "/lovable-uploads/2d5dd3c8-b636-4586-a8a0-955f199b3cf0.png",
+      "/lovable-uploads/fe90b0a3-a45e-4685-931e-1a107ec88997.png"
     ],
     features: [
       "Electrical panel upgrades and replacements",
@@ -40,11 +40,12 @@ const serviceData = {
   commercial: {
     title: "Commercial Electrical Services",
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
-    mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
+    mainImage: "/lovable-uploads/6bcc2d2e-9906-4531-85ca-6cfda073f2bc.png",
     galleryImages: [
-      "/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png",
-      "/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png",
-      "/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png"
+      "/lovable-uploads/6bcc2d2e-9906-4531-85ca-6cfda073f2bc.png",
+      "/lovable-uploads/a905dc4d-82d5-48ce-89ca-9880d07a2687.png",
+      "/lovable-uploads/3c475d59-623c-4b15-a468-0afeba8f5a23.png",
+      "/lovable-uploads/d45c6ca1-2049-4f56-8d75-9be68ef04a23.png"
     ],
     features: [
       "Commercial electrical installations and renovations",
