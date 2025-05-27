@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -42,9 +41,6 @@ const serviceData = {
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
     mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
     galleryImages: [
-      "/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png",
-      "/lovable-uploads/dd042d93-20ce-41c9-8844-ca41274348fc.png",
-      "/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png",
       "/lovable-uploads/65babee3-1680-4493-952b-d07b720d4fed.png",
       "/lovable-uploads/1cc1a3f1-e9d9-44d2-a3a0-0d93342ed30d.png",
       "/lovable-uploads/52213233-a3d1-46ca-b477-8318a55f4bb6.png",
