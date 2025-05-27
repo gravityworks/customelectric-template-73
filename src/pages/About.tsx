@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,7 @@ const About = () => {
       {/* Hero Section with Photo Background and Blue Overlay */}
       <div className="relative">
         <div className="absolute inset-0 z-0" style={{
-        backgroundImage: `url('/lovable-uploads/7f4bf15b-7b8d-4cbc-8b21-9b83f2007a60.png')`,
+        backgroundImage: `url('/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100%'
@@ -123,7 +122,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Image */}
               <div className="bg-estate-200 h-72 md:h-auto" style={{
-                backgroundImage: "url('/lovable-uploads/a905dc4d-82d5-48ce-89ca-9880d07a2687.png')",
+                backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}>
