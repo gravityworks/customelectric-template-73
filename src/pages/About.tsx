@@ -122,7 +122,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Image */}
               <div className="bg-estate-200 h-72 md:h-auto" style={{
-                backgroundImage: "url('/lovable-uploads/1deaa123-64f1-43e5-b5fb-a6d6478b16f5.png')",
+                backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}>
