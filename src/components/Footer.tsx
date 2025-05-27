@@ -57,10 +57,10 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-estate-300">
-                <li>123 Electric Avenue</li>
-                <li>Lansing, MI 48912</li>
-                <li>(517) 555-1234</li>
-                <li>info@customelectric.com</li>
+                <li>2214 Depot St</li>
+                <li>Holt, MI 48842</li>
+                <li>(517) 204-4405</li>
+                <li>customelectricinc@gmail.com</li>
               </ul>
             </div>
             <div>
