@@ -103,6 +103,28 @@ const ServicePage = () => {
     );
   }
 
+  // Featured Projects data for commercial services
+  const featuredProjects = serviceType === 'commercial' ? [
+    {
+      image: "/lovable-uploads/73662331-ce1d-43a1-8f89-3d83037c1888.png",
+      title: "Industrial Power Distribution Center",
+      description: "Complete electrical infrastructure upgrade for a major manufacturing facility. We installed a state-of-the-art power distribution system with multiple switchgear panels, providing reliable power distribution across the entire facility. The project included comprehensive safety systems and redundant power paths to ensure zero downtime for critical operations.",
+      highlights: ["500+ amp service upgrade", "15 distribution panels", "Zero downtime installation", "Enhanced safety systems"]
+    },
+    {
+      image: "/lovable-uploads/abe8b518-2855-4b85-a2e3-96979d4a7497.png",
+      title: "Modern Restaurant Electrical Design",
+      description: "Custom electrical solution for an upscale restaurant featuring sophisticated lighting design and commercial kitchen power systems. Our team designed and installed pendant lighting, under-cabinet LED systems, and high-capacity electrical service for commercial appliances, creating the perfect ambiance while meeting strict commercial kitchen requirements.",
+      highlights: ["Custom pendant lighting", "Commercial kitchen wiring", "LED under-cabinet systems", "Atmospheric lighting design"]
+    },
+    {
+      image: "/lovable-uploads/3549958e-d9c6-409c-bb4c-8cbc415afe40.png",
+      title: "Large-Scale Warehouse Lighting",
+      description: "Energy-efficient LED lighting retrofit for a 50,000 sq ft distribution warehouse. We replaced outdated fluorescent fixtures with high-efficiency LED lighting systems, resulting in 60% energy savings and dramatically improved visibility for warehouse operations. The project was completed in phases to maintain continuous operations.",
+      highlights: ["50,000 sq ft coverage", "60% energy savings", "Improved visibility", "Phased installation"]
+    }
+  ] : [];
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section with Photo Background and Blue Overlay */}
@@ -199,6 +221,49 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Featured Projects Section - Only for Commercial Services */}
+      {featuredProjects.length > 0 && (
+        <div className="bg-estate-50 py-16">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-display text-estate-800 mb-4">Featured Projects</h2>
+              <p className="text-lg text-estate-600 max-w-3xl mx-auto">
+                Discover how Custom Electric has delivered exceptional commercial electrical solutions for businesses across various industries.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredProjects.map((project, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <AspectRatio ratio={4/3}>
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  </AspectRatio>
+                  <div className="p-6">
+                    <h3 className="text-xl font-medium text-estate-800 mb-3">{project.title}</h3>
+                    <p className="text-estate-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <div className="space-y-2">
+                      <h4 className="font-medium text-estate-800 text-sm">Project Highlights:</h4>
+                      <ul className="grid grid-cols-1 gap-1">
+                        {project.highlights.map((highlight, highlightIndex) => (
+                          <li key={highlightIndex} className="flex items-start text-sm">
+                            <Check className="h-4 w-4 text-brand-blue mr-2 mt-0.5 flex-shrink-0" />
+                            <span className="text-estate-600">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
       
       <Footer />
     </div>
