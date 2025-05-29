@@ -1,14 +1,11 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const About = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       {/* Hero Section with Photo Background and Blue Overlay */}
       <div className="relative">
         <div className="absolute inset-0 z-0" style={{
@@ -99,7 +96,7 @@ const About = () => {
             {/* Team member cards would go here */}
             <div className="bg-estate-50 p-6 rounded-lg text-center">
               <div className="w-32 h-32 rounded-full bg-estate-200 mx-auto mb-4"></div>
-              <h3 className="text-xl font-medium">Dean Smith</h3>
+              <h3 className="text-xl font-medium">Dean Bontrager</h3>
               <p className="text-estate-600">Founder & Master Electrician</p>
             </div>
             <div className="bg-estate-50 p-6 rounded-lg text-center">
@@ -123,10 +120,10 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Image */}
               <div className="bg-estate-200 h-72 md:h-auto" style={{
-                backgroundImage: "url('/lovable-uploads/3ccba5f8-568e-4ad3-a4c5-7c22d19b8db0.png')",
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}>
+              backgroundImage: "url('/lovable-uploads/3ccba5f8-568e-4ad3-a4c5-7c22d19b8db0.png')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>
               </div>
               
               {/* Right side: Content */}
@@ -156,8 +153,6 @@ const About = () => {
       </div>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
