@@ -10,14 +10,19 @@ import {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Homeowner",
-      text: "Custom Electric exceeded all our expectations, delivering exceptional service and phenomenal results. Their expertise and attention to detail made our electrical upgrade truly remarkable.",
+      name: "Jay Hull",
+      role: "General Contractor",
+      text: "I'm a GC with Hull Designs llc and like to use Custom Electric on our projects. Jase and CJ did a great job keeping job site clean and on schedule. They ran a new line to 2nd story opposite end of main box. We installed lights and moved locations of lights and added a Panasonic wiper exhaust fan with tru heat option. Also ran line for heated flooring. Great company to work with great prices and good employees.",
     },
     {
-      name: "Michael Chen",
-      role: "Business Owner",
-      text: "Working with Custom Electric has been transformative for our commercial property. Their professional team completed the work on time and within budget, with minimal disruption to our business.",
+      name: "Gennene",
+      role: "Homeowner",
+      text: "I can't even begin to convey how great their service is. We use Custom Electric at my place of business, and they have always been quick and affordable. I had a problem at home, I texted on a Sunday with an emergency. Got a quick response and was immediately scheduled. The weather was horrible, and I felt so bad, but the problem was promptly solved. Thanks to everyone involved!",
+    },
+    {
+      name: "Peggy",
+      role: "Local Resident",
+      text: "I manage the quality dairy in holt and have a lot of custom electric guys that come in. They are all so friendly and nice. I have never had any of them grumpy or mean. I just wanted to let you know this because it's nice to have customers like that",
     },
   ];
 
