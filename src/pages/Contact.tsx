@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -53,10 +54,26 @@ const Contact = () => {
       {/* Main Content */}
       <div className="container mx-auto max-w-6xl px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Column: Contact Information */}
+          {/* Left Column: CTA Buttons (formerly right column) */}
           <div>
-            <h2 className="text-3xl font-display text-estate-800 mb-8">Get In Touch</h2>
-            
+            <div className="bg-estate-50 p-8 rounded-lg">
+              <h2 className="text-3xl font-display text-estate-800 mb-6">How Can We Help You?</h2>
+              <p className="text-lg text-estate-600 mb-8">
+                Whether you're a homeowner looking for assistance with a project, a business owner needing electrical services, or a professional looking to join our team, we're here to help.
+              </p>
+              <div className="space-y-4">
+                <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80" asChild>
+                  <a href="#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
+                </Button>
+                <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+                  <Link to="/careers">Apply for a Job</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+          
+          {/* Right Column: Contact Information (formerly left column) */}
+          <div>
             <div className="space-y-8">
               <Card className="overflow-hidden">
                 <CardContent className="p-6 py-[10px] px-[19px]">
@@ -114,29 +131,12 @@ const Contact = () => {
               </Card>
             </div>
           </div>
-          
-          {/* Right Column: CTA Buttons */}
-          <div>
-            <div className="bg-estate-50 p-8 rounded-lg">
-              <h2 className="text-3xl font-display text-estate-800 mb-6">How Can We Help You?</h2>
-              <p className="text-lg text-estate-600 mb-8">
-                Whether you're a homeowner looking for assistance with a project, a business owner needing electrical services, or a professional looking to join our team, we're here to help.
-              </p>
-              <div className="space-y-4">
-                <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80" asChild>
-                  <a href="#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
-                </Button>
-                <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
-                  <Link to="/careers">Apply for a Job</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       
-      {/* Embed Section */}
+      {/* Request a Quote Section */}
       <div className="container mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-3xl font-display text-estate-800 mb-8 text-center">Request a Quote</h2>
         <div id="4915b458-7ff6-4146-9d9e-7348ad70127a"></div>
       </div>
       
