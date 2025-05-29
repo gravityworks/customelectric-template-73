@@ -18,8 +18,8 @@ const Index = () => {
           <h2 className="text-5xl font-display text-estate-800 mb-16">Our Services</h2>
           <PropertyGrid />
           <div className="mt-12">
-            <Button variant="secondary" size="lg" className="font-medium">
-              View All Services
+            <Button variant="secondary" size="lg" className="font-medium" asChild>
+              <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">View All Services</a>
             </Button>
           </div>
         </div>

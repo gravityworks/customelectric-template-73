@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
@@ -19,11 +20,11 @@ const Footer = () => {
             <p className="text-xl mb-2 md:mb-0">Let's connect about your next project.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
-              Request a Quote
+            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+              <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
             </Button>
-            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light">
-              Contact us
+            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+              <Link to="/contact">Contact us</Link>
             </Button>
           </div>
         </div>

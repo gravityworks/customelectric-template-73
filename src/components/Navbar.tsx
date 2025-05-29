@@ -88,8 +88,8 @@ const Navbar = () => {
             </NavigationMenu>
             <Link to="/about" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">About</Link>
             <Link to="/contact" className="text-brand-offwhite hover:text-brand-offwhite/80 transition-colors">Contact</Link>
-            <Button variant="secondary" className="font-medium">
-              Request Quote
+            <Button variant="secondary" className="font-medium" asChild>
+              <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">Request Quote</a>
             </Button>
           </div>
 
@@ -124,7 +124,9 @@ const Navbar = () => {
                   </div>
                   <Link to="/about" className="text-lg">About</Link>
                   <Link to="/contact" className="text-lg">Contact</Link>
-                  <Button className="w-full">Request Quote</Button>
+                  <Button className="w-full" asChild>
+                    <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">Request Quote</a>
+                  </Button>
                 </div>
               </SheetContent>
             </Sheet>

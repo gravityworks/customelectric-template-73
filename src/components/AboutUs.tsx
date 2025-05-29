@@ -50,8 +50,8 @@ const AboutUs = () => {
           From those humble beginnings, Custom Electric has grown into a trusted name in the Greater Lansing and Mid-Michigan areas. Over the years, we've served thousands of customers—handling everything from commercial wiring projects to simple home outlet installations.
         </p>
         <div className="mt-6">
-          <Button variant="secondary" size="lg">
-            About Us
+          <Button variant="secondary" size="lg" asChild>
+            <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
           </Button>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -145,8 +146,8 @@ const Contact = () => {
                 Whether you're a homeowner looking for assistance with a project, a business owner needing electrical services, or a professional looking to join our team, we're here to help.
               </p>
               <div className="space-y-4">
-                <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80">
-                  Request a Quote
+                <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80" asChild>
+                  <a href="#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
                 </Button>
                 <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
                   <Link to="/careers">Apply for a Job</Link>
