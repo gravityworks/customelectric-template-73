@@ -1,12 +1,34 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    // Add the external CSS link for the embed
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css';
+    link.media = 'screen';
+    document.head.appendChild(link);
+
+    // Add the external script for the embed
+    const script = document.createElement('script');
+    script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js';
+    script.setAttribute('clienthub_id', '4915b458-7ff6-4146-9d9e-7348ad70127a');
+    script.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/4915b458-7ff6-4146-9d9e-7348ad70127a/public/work_request/embedded_work_request_form');
+    document.body.appendChild(script);
+
+    // Cleanup function to remove the added elements
+    return () => {
+      document.head.removeChild(link);
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section with Photo Background and Blue Overlay */}
@@ -147,6 +169,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Embed Section */}
+      <div className="container mx-auto max-w-6xl px-4 py-16">
+        <div id="4915b458-7ff6-4146-9d9e-7348ad70127a"></div>
       </div>
       
       <Footer />
