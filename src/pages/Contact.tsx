@@ -1,5 +1,3 @@
-
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,7 +5,6 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
 const Contact = () => {
   useEffect(() => {
     // Add the external CSS link for the embed
@@ -30,17 +27,15 @@ const Contact = () => {
       document.body.removeChild(script);
     };
   }, []);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       {/* Hero Section with Photo Background and Blue Overlay */}
       <div className="relative">
         <div className="absolute inset-0 z-0" style={{
-          backgroundImage: `url('/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '100%'
-        }}>
+        backgroundImage: `url('/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100%'
+      }}>
           <div className="absolute inset-0 bg-brand-blue/70" />
         </div>
         
@@ -64,7 +59,7 @@ const Contact = () => {
             
             <div className="space-y-8">
               <Card className="overflow-hidden">
-                <CardContent className="p-6">
+                <CardContent className="p-6 py-[10px] px-[19px]">
                   <div className="flex items-start gap-4">
                     <div className="bg-brand-blue text-white p-3 rounded-full">
                       <Phone className="w-6 h-6" />
@@ -82,7 +77,7 @@ const Contact = () => {
               </Card>
               
               <Card className="overflow-hidden">
-                <CardContent className="p-6">
+                <CardContent className="p-6 py-[10px] px-[20px]">
                   <div className="flex items-start gap-4">
                     <div className="bg-brand-blue text-white p-3 rounded-full">
                       <Mail className="w-6 h-6" />
@@ -100,7 +95,7 @@ const Contact = () => {
               </Card>
               
               <Card className="overflow-hidden">
-                <CardContent className="p-6">
+                <CardContent className="p-6 py-[10px] px-[20px]">
                   <div className="flex items-start gap-4">
                     <div className="bg-brand-blue text-white p-3 rounded-full">
                       <MapPin className="w-6 h-6" />
@@ -108,12 +103,7 @@ const Contact = () => {
                     <div>
                       <h3 className="text-xl font-semibold mb-1">Office Address</h3>
                       <p className="text-estate-600">
-                        <a 
-                          href="https://maps.google.com/?q=2214+Depot+St,+Holt+MI+48842" 
-                          target="_blank" 
-                          rel="noreferrer"
-                          className="hover:text-brand-blue transition-colors"
-                        >
+                        <a href="https://maps.google.com/?q=2214+Depot+St,+Holt+MI+48842" target="_blank" rel="noreferrer" className="hover:text-brand-blue transition-colors">
                           2214 Depot St<br />
                           Holt, MI 48842
                         </a>
@@ -151,9 +141,6 @@ const Contact = () => {
       </div>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
-
