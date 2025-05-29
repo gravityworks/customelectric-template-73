@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -52,7 +51,7 @@ const Contact = () => {
       </div>
       
       {/* Main Content */}
-      <div className="container mx-auto max-w-6xl px-4 py-16">
+      <div className="container mx-auto max-w-6xl px-4 py-[40px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column: CTA Buttons (formerly right column) */}
           <div>
