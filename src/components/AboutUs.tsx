@@ -2,36 +2,19 @@
 import { useEffect, useState } from "react";
 
 const AboutUs = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-    };
-    
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <section id="about" className="relative py-24 min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Parallax Background Image */}
+      {/* Static Background Image */}
       <div 
         className="absolute inset-0 w-full h-full"
         style={{
-          transform: `translateY(${scrollPosition * 0.15}px)`,
-          transition: "transform 0.05s ease-out",
           backgroundImage: "url('/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
       
-      {/* Content - This stays fixed in place */}
+      {/* Content - Centered over background */}
       <div className="relative z-10 container mx-auto px-6 max-w-4xl text-center">
         <h2 className="text-4xl font-display text-white mb-6">Our Story</h2>
         <p className="text-white mb-8 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed">
