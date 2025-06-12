@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
+              src="/whitelogo.png" 
               alt="Custom Electric" 
               className="h-10"
             />
@@ -104,7 +104,7 @@ const Navbar = () => {
               <SheetContent>
                 <div className="flex justify-center mb-8 mt-4">
                   <img 
-                    src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" 
+                    src="/whitelogo.png" 
                     alt="Custom Electric" 
                     className="h-8"
                   />
