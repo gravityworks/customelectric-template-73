@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,8 +56,8 @@ export default {
         brand: {
           blue: "#375B8F",
           charcoal: "#2F2E2E",
-          yellow: "#E7FF91",
-          "yellow-light": "#F8FFE1",
+          yellow: "#D2D2D2",
+          "yellow-light": "#E8E8E8",
           offwhite: "#FAF6EF",
         },
         estate: {
