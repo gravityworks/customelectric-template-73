@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
@@ -16,14 +15,14 @@ const Footer = () => {
             <img src="/lovable-uploads/cd04ddd6-3c8b-4889-a685-ebfc54862cca.png" alt="Custom Electric" className="h-14" /* Increased size by 75% from h-8 */ />
           </div>
           <div className="text-center md:text-left mb-6 md:mb-0 md:mx-4 lg:mx-0">
-            <h3 className="text-4xl font-display text-brand-yellow mb-2">Ready to get started?</h3>
+            <h3 className="text-4xl font-display text-brand-gray mb-2">Ready to get started?</h3>
             <p className="text-xl mb-2 md:mb-0">Let's connect about your next project.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+            <Button size="lg" className="bg-brand-gray text-brand-blue hover:bg-brand-gray-light" asChild>
               <a href="/contact#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
             </Button>
-            <Button size="lg" className="bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+            <Button size="lg" className="bg-brand-gray text-brand-blue hover:bg-brand-gray-light" asChild>
               <Link to="/contact">Contact us</Link>
             </Button>
           </div>

@@ -64,7 +64,7 @@ const Contact = () => {
                 <Button size="lg" className="w-full bg-brand-blue hover:bg-brand-blue/80" asChild>
                   <a href="#4915b458-7ff6-4146-9d9e-7348ad70127a">Request a Quote</a>
                 </Button>
-                <Button size="lg" className="w-full bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light" asChild>
+                <Button size="lg" className="w-full bg-brand-gray text-brand-blue hover:bg-brand-gray-light" asChild>
                   <Link to="/careers">Apply for a Job</Link>
                 </Button>
               </div>

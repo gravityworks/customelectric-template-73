@@ -84,7 +84,7 @@
   }
   
   .btn-accent {
-    @apply bg-brand-yellow text-brand-blue hover:bg-brand-yellow-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
+    @apply bg-brand-gray text-brand-blue hover:bg-brand-gray-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
   }
 }
 

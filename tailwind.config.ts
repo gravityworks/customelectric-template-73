@@ -56,8 +56,8 @@ export default {
         brand: {
           blue: "#375B8F",
           charcoal: "#2F2E2E",
-          yellow: "#D2D2D2",
-          "yellow-light": "#E8E8E8",
+          gray: "#D2D2D2",
+          "gray-light": "#E8E8E8",
           offwhite: "#FAF6EF",
         },
         estate: {
