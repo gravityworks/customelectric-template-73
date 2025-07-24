@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return <footer id="contact" className="text-white">
       {/* CTA Section */}
-      <div className="py-12" style={{
-        backgroundImage: "url('/lovable-uploads/0cc86266-7867-4628-b0de-a6fa09e4c231.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative"
-      }}>
+      <div className="py-12 bg-brand-blue">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center md:items-start justify-between relative z-10">
           <div className="flex items-center mb-8 md:mb-0">
             <img src="/whitelogo.png" alt="Custom Electric" className="h-14" /* Increased size by 75% from h-8 */ />
