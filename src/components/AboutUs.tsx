@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className="relative z-10 container mx-auto px-6 max-w-4xl text-center">
         <h2 className="text-4xl font-display text-white mb-6">Our Story</h2>
         <p className="text-white mb-8 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed">
-          In the spring of 98, a young journeyman electrician named Dean took a leap of faith. With just a handful of tools and a small pickup truck, he launched what would become Custom Electric Inc.
+          In the spring of '98, a young journeyman electrician named Dean took a leap of faith. With just a handful of tools and a small pickup truck, he launched what would become Custom Electric Inc.
           <br /><br />
           From those humble beginnings, Custom Electric has grown into a trusted name in the Greater Lansing and Mid-Michigan areas. Over the years, we've served thousands of customers—handling everything from commercial wiring projects to simple home outlet installations.
         </p>
