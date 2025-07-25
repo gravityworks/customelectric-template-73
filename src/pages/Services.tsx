@@ -118,6 +118,12 @@ const ServicePage = () => {
       highlights: ["Custom pendant lighting", "Commercial kitchen wiring", "LED under-cabinet systems", "Atmospheric lighting design"]
     },
     {
+      image: "/lovable-uploads/76dbaab2-c2c8-43f0-8ba4-eaba0ea310df.png",
+      title: "Large-Scale Warehouse Lighting",
+      description: "Complete lighting retrofit for a 50,000 sq ft distribution center, replacing outdated fluorescent fixtures with energy-efficient LED systems. Our design improved visibility throughout the facility while reducing energy consumption by 60%. The project included motion sensors and smart controls for optimal efficiency.",
+      highlights: ["50,000 sq ft coverage", "60% energy reduction", "Motion sensor integration", "Smart lighting controls"]
+    },
+    {
       image: "/lovable-uploads/210e2ca5-0c89-4337-8c39-bb13bc386aec.png",
       title: "Historic Building Renovation",
       description: "Sensitive electrical restoration of a landmark historic building while preserving its architectural integrity. We carefully integrated modern electrical systems behind original millwork and decorative elements, including custom lighting solutions that complement the building's Art Nouveau design. The project required specialized techniques to maintain the building's historic character.",
