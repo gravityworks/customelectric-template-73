@@ -43,7 +43,8 @@ const serviceData = {
     galleryImages: [
       "/lovable-uploads/ccdbd82b-6c10-4b37-a893-3bcf86fd386e.png",
       "/lovable-uploads/ee9269ae-6454-45d5-8e72-a9a927ec31d6.png",
-      "/lovable-uploads/af8fe629-d0c4-49cb-b585-def1b9c720a8.png"
+      "/lovable-uploads/af8fe629-d0c4-49cb-b585-def1b9c720a8.png",
+      "/lovable-uploads/76dbaab2-c2c8-43f0-8ba4-eaba0ea310df.png"
     ],
     features: [
       "Commercial electrical installations and renovations",
@@ -115,12 +116,6 @@ const ServicePage = () => {
       title: "Modern Restaurant Electrical Design",
       description: "Custom electrical solution for an upscale restaurant featuring sophisticated lighting design and commercial kitchen power systems. Our team designed and installed pendant lighting, under-cabinet LED systems, and high-capacity electrical service for commercial appliances, creating the perfect ambiance while meeting strict commercial kitchen requirements.",
       highlights: ["Custom pendant lighting", "Commercial kitchen wiring", "LED under-cabinet systems", "Atmospheric lighting design"]
-    },
-    {
-      image: "/lovable-uploads/3549958e-d9c6-409c-bb4c-8cbc415afe40.png",
-      title: "Large-Scale Warehouse Lighting",
-      description: "Energy-efficient LED lighting retrofit for a 50,000 sq ft distribution warehouse. We replaced outdated fluorescent fixtures with high-efficiency LED lighting systems, resulting in 60% energy savings and dramatically improved visibility for warehouse operations. The project was completed in phases to maintain continuous operations.",
-      highlights: ["50,000 sq ft coverage", "60% energy savings", "Improved visibility", "Phased installation"]
     },
     {
       image: "/lovable-uploads/210e2ca5-0c89-4337-8c39-bb13bc386aec.png",
