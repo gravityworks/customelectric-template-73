@@ -44,7 +44,7 @@ const serviceData = {
       "/lovable-uploads/commercialState of Fitness Interior1.jpg",
       "/lovable-uploads/commercialState of Fitness Interior3.jpg",
       "/lovable-uploads/commercialNotre Dame Federal Credit Union Interior.jpg",
-      "/lovable-uploads/commercial Larch Interior3.jpg",
+      "/lovable-uploads/DIG 154 Larch Interior3.jpg",
       "/lovable-uploads/commercialrestaraunt.jpg",
       "/lovable-uploads/commercialoffice.jpg",
       "/lovable-uploads/commercialrisen inside.jpg"
