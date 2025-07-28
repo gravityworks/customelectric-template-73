@@ -12,7 +12,7 @@ const PropertyGrid = () => {
       serviceType: "commercial"
     },
     {
-      image: "/src/home1.jpg",
+      image: "/lovable-uploads/home8",
       title: "Residential",
       description: "Comprehensive electrical services for homes including installations, repairs, and safety inspections to keep your family safe and comfortable.",
       icon: Home,
