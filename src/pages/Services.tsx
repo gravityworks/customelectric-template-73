@@ -114,28 +114,28 @@ const ServicePage = () => {
   // Featured Projects data for commercial services
   const featuredProjects = serviceType === 'commercial' ? [
     {
-      image: "/lovable-uploads/73662331-ce1d-43a1-8f89-3d83037c1888.png",
-      title: "Industrial Power Distribution Center",
-      description: "Complete electrical infrastructure upgrade for a major manufacturing facility. We installed a state-of-the-art power distribution system with multiple switchgear panels, providing reliable power distribution across the entire facility. The project included comprehensive safety systems and redundant power paths to ensure zero downtime for critical operations.",
-      highlights: ["500+ amp service upgrade", "15 distribution panels", "Zero downtime installation", "Enhanced safety systems"]
+      image: "/lovable-uploads/commercialcallout5.jpg",
+      title: "Modern Office Complex Electrical Design",
+      description: "Complete electrical installation for a contemporary office building featuring advanced lighting systems, power distribution, and technology infrastructure. Our team designed and installed energy-efficient LED lighting throughout the workspace, along with comprehensive power solutions for modern office equipment and HVAC systems.",
+      highlights: ["LED lighting retrofit", "Smart building controls", "Energy-efficient design", "Modern workspace solutions"]
     },
     {
-      image: "/lovable-uploads/abe8b518-2855-4b85-a2e3-96979d4a7497.png",
-      title: "Modern Restaurant Electrical Design",
-      description: "Custom electrical solution for an upscale restaurant featuring sophisticated lighting design and commercial kitchen power systems. Our team designed and installed pendant lighting, under-cabinet LED systems, and high-capacity electrical service for commercial appliances, creating the perfect ambiance while meeting strict commercial kitchen requirements.",
-      highlights: ["Custom pendant lighting", "Commercial kitchen wiring", "LED under-cabinet systems", "Atmospheric lighting design"]
+      image: "/lovable-uploads/commercialcallout4.jpg",
+      title: "Retail Store Electrical Installation",
+      description: "Comprehensive electrical solution for a modern retail space including track lighting systems, display lighting, and point-of-sale power infrastructure. We created an inviting shopping environment with strategic lighting placement while ensuring reliable power for all retail operations and security systems.",
+      highlights: ["Track lighting systems", "Display case lighting", "POS system wiring", "Security system integration"]
     },
     {
-      image: "/lovable-uploads/76dbaab2-c2c8-43f0-8ba4-eaba0ea310df.png",
-      title: "Large-Scale Warehouse Lighting",
-      description: "Complete lighting retrofit for a 50,000 sq ft distribution center, replacing outdated fluorescent fixtures with energy-efficient LED systems. Our design improved visibility throughout the facility while reducing energy consumption by 60%. The project included motion sensors and smart controls for optimal efficiency.",
-      highlights: ["50,000 sq ft coverage", "60% energy reduction", "Motion sensor integration", "Smart lighting controls"]
+      image: "/lovable-uploads/commercialcallout3.jpg",
+      title: "Commercial Kitchen Electrical Systems",
+      description: "Specialized electrical installation for a commercial kitchen facility featuring high-capacity power systems for professional-grade equipment. Our team installed dedicated circuits for ovens, refrigeration units, and ventilation systems while ensuring all installations meet strict commercial kitchen safety codes and health department requirements.",
+      highlights: ["High-capacity circuits", "Commercial equipment wiring", "Code compliance", "Safety system integration"]
     },
     {
-      image: "/lovable-uploads/210e2ca5-0c89-4337-8c39-bb13bc386aec.png",
-      title: "Historic Building Renovation",
-      description: "Sensitive electrical restoration of a landmark historic building while preserving its architectural integrity. We carefully integrated modern electrical systems behind original millwork and decorative elements, including custom lighting solutions that complement the building's Art Nouveau design. The project required specialized techniques to maintain the building's historic character.",
-      highlights: ["Historic preservation compliance", "Custom Art Nouveau lighting", "Hidden modern systems", "Architectural integration"]
+      image: "/lovable-uploads/commercialcallout1.jpg",
+      title: "Industrial Facility Power Upgrade",
+      description: "Major electrical infrastructure upgrade for an industrial manufacturing facility including new main service panels, motor control centers, and machinery connections. We coordinated the installation to minimize downtime while upgrading the facility's electrical capacity to support expanded operations and new equipment installations.",
+      highlights: ["Main service upgrade", "Motor control systems", "Minimal downtime", "Expanded capacity"]
     }
   ] : [];
 
