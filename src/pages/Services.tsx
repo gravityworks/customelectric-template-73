@@ -17,12 +17,14 @@ const serviceData = {
   residential: {
     title: "Residential Electrical Services",
     description: "Custom Electric provides a wide range of residential electrical services to keep your home safe, comfortable, and energy-efficient.",
-    mainImage: "/lovable-uploads/2ac8c716-fa77-4c9d-bd73-3304c92acb48.png",
+    mainImage: "/src/home1.jpg",
     galleryImages: [
-      "/lovable-uploads/3498643b-4140-4b06-93a2-a6ad010d44c1.png",
-      "/lovable-uploads/749e0679-b20d-41da-ae3d-4cdd48562e86.png",
-      "/lovable-uploads/b4a833ce-a95a-43c6-9a7d-3b21ee36088c.png",
-      "/lovable-uploads/bff570fc-46e3-4080-8f1f-80bd124489d7.png"
+      "/src/home2.jpg",
+      "/src/home3.jpg",
+      "/src/home4.jpg",
+      "/src/home5.jpg",
+      "/src/home6.jpg",
+      "/src/home7.jpg"
     ],
     features: [
       "Electrical panel upgrades and replacements",

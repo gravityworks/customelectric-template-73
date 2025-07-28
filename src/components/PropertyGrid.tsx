@@ -12,7 +12,7 @@ const PropertyGrid = () => {
       serviceType: "commercial"
     },
     {
-      image: "/lovable-uploads/2ac8c716-fa77-4c9d-bd73-3304c92acb48.png", // Home interior with built-in shelving
+      image: "/src/home1.jpg",
       title: "Residential",
       description: "Comprehensive electrical services for homes including installations, repairs, and safety inspections to keep your family safe and comfortable.",
       icon: Home,
