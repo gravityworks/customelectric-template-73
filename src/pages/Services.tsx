@@ -65,7 +65,12 @@ const serviceData = {
     description: "Ensure your home or business never loses power with our professional generator installation and maintenance services.",
     mainImage: "/lovable-uploads/a22f888b-6718-4a75-88eb-3c7e24477d0a.png",
     galleryImages: [
-      "/lovable-uploads/a22f888b-6718-4a75-88eb-3c7e24477d0a.png"
+      "/lovable-uploads/Generator1.jpg",
+      "/lovable-uploads/Generator2.jpg",
+      "/lovable-uploads/Generator3.jpg",
+      "/lovable-uploads/Generator4.jpg",
+      "/lovable-uploads/Generator5.jpg",
+      "/lovable-uploads/Generator6.jpg"
     ],
     features: [
       "Automatic standby generator installation",
