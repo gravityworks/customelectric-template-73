@@ -38,7 +38,6 @@ const serviceData = {
     galleryImages: [
       "/lovable-uploads/commercialBobcats Interior1.jpg",
       "/lovable-uploads/commercialBobcats Interior2.jpg",
-      "/lovable-uploads/commercialBobcats Interior3.jpg",
       "/lovable-uploads/commercialBobcats Interior4.jpg",
       "/lovable-uploads/commercialBobcats Interior5.jpg",
       "/lovable-uploads/commercialState of Fitness Interior1.jpg",
