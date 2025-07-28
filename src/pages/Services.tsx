@@ -34,12 +34,20 @@ const serviceData = {
   commercial: {
     title: "Commercial Electrical Services",
     description: "Custom Electric delivers reliable, code-compliant electrical solutions for businesses of all sizes, from retail stores to large office buildings.",
-    mainImage: "/lovable-uploads/4f655f00-0cc5-4234-925b-75620e7cf264.png",
+    mainImage: "/lovable-uploads/2.jpg",
     galleryImages: [
-      "/lovable-uploads/ccdbd82b-6c10-4b37-a893-3bcf86fd386e.png",
-      "/lovable-uploads/ee9269ae-6454-45d5-8e72-a9a927ec31d6.png",
-      "/lovable-uploads/af8fe629-d0c4-49cb-b585-def1b9c720a8.png",
-      "/lovable-uploads/76dbaab2-c2c8-43f0-8ba4-eaba0ea310df.png"
+      "/lovable-uploads/commercialBobcats Interior1.jpg",
+      "/lovable-uploads/commercialBobcats Interior2.jpg",
+      "/lovable-uploads/commercialBobcats Interior3.jpg",
+      "/lovable-uploads/commercialBobcats Interior4.jpg",
+      "/lovable-uploads/commercialBobcats Interior5.jpg",
+      "/lovable-uploads/commercialState of Fitness Interior1.jpg",
+      "/lovable-uploads/commercialState of Fitness Interior3.jpg",
+      "/lovable-uploads/commercialNotre Dame Federal Credit Union Interior.jpg",
+      "/lovable-uploads/commercial Larch Interior3.jpg",
+      "/lovable-uploads/commercialrestaraunt.jpg",
+      "/lovable-uploads/commercialoffice.jpg",
+      "/lovable-uploads/commercialrisen inside.jpg"
     ],
     features: [
       "Commercial electrical installations and renovations",
