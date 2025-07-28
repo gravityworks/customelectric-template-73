@@ -3,15 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
 import { Check } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const serviceData = {
   residential: {
@@ -84,10 +77,16 @@ const serviceData = {
 const ServicePage = () => {
   const { serviceType } = useParams();
   const service = serviceType ? serviceData[serviceType as keyof typeof serviceData] : null;
+  const [selectedImage, setSelectedImage] = useState(0);
   
   useEffect(() => {
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);
+  }, [serviceType]);
+
+  useEffect(() => {
+    // Reset selected image when service type changes
+    setSelectedImage(0);
   }, [serviceType]);
   
   if (!service) {
@@ -169,36 +168,51 @@ const ServicePage = () => {
             <div className="mb-6 rounded-lg overflow-hidden shadow-lg">
               <AspectRatio ratio={4/3}>
                 <img 
-                  src={service.mainImage} 
+                  src={selectedImage === 0 ? service.mainImage : service.galleryImages[selectedImage - 1]} 
                   alt={service.title} 
                   className="w-full h-full object-cover"
                 />
               </AspectRatio>
             </div>
             
-            {/* Image Gallery Carousel */}
-            {service.galleryImages.length > 1 && (
-              <Carousel className="w-full">
-                <CarouselContent>
-                  {service.galleryImages.map((image, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="p-1">
-                        <AspectRatio ratio={1/1} className="rounded-md overflow-hidden">
-                          <img 
-                            src={image} 
-                            alt={`${service.title} example ${index + 1}`} 
-                            className="w-full h-full object-cover"
-                          />
-                        </AspectRatio>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <div className="flex justify-center mt-4">
-                  <CarouselPrevious className="relative static mr-2" />
-                  <CarouselNext className="relative static ml-2" />
+            {/* Interactive Thumbnail Gallery */}
+            {(service.galleryImages.length > 0 || service.mainImage) && (
+              <div className="grid grid-cols-4 gap-2">
+                {/* Main image thumbnail */}
+                <div 
+                  className={`cursor-pointer rounded-md overflow-hidden transition-all duration-200 ${
+                    selectedImage === 0 ? 'ring-2 ring-brand-blue opacity-100' : 'opacity-70 hover:opacity-100'
+                  }`}
+                  onClick={() => setSelectedImage(0)}
+                >
+                  <AspectRatio ratio={1/1}>
+                    <img 
+                      src={service.mainImage} 
+                      alt={`${service.title} main`} 
+                      className="w-full h-full object-cover"
+                    />
+                  </AspectRatio>
                 </div>
-              </Carousel>
+                
+                {/* Gallery thumbnails */}
+                {service.galleryImages.map((image, index) => (
+                  <div 
+                    key={index}
+                    className={`cursor-pointer rounded-md overflow-hidden transition-all duration-200 ${
+                      selectedImage === index + 1 ? 'ring-2 ring-brand-blue opacity-100' : 'opacity-70 hover:opacity-100'
+                    }`}
+                    onClick={() => setSelectedImage(index + 1)}
+                  >
+                    <AspectRatio ratio={1/1}>
+                      <img 
+                        src={image} 
+                        alt={`${service.title} example ${index + 1}`} 
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
           
