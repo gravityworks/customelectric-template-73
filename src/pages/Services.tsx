@@ -119,7 +119,7 @@ const ServicePage = () => {
   // Featured Projects data for commercial services
   const featuredProjects = serviceType === 'commercial' ? [
     {
-      image: "/lovable-uploads/commercialcallout5.jpg",
+      image: "/lovable-uploads/Retail Café Electrical Design.jpg",
       title: "Retail Café Electrical Design",
       description: "Full-service electrical design and installation for a modern retail café space. This project included the complete layout and integration of power circuits for food service equipment, ambient and task lighting, point-of-sale systems, and customer-facing technology. The electrical design was tailored to meet the unique needs of a hospitality environment, balancing efficiency, safety, and aesthetics.",
       highlights: ["Dedicated circuits for espresso machines, grinders, and refrigeration", "Code-compliant kitchen and service area wiring", "Integrated lighting controls for ambiance and energy savings", "Power layout for POS stations, charging bars, and Wi-Fi zones"]
