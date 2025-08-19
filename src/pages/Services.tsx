@@ -138,9 +138,9 @@ const ServicePage = () => {
     },
     {
       image: "/lovable-uploads/commercialcallout1.jpg",
-      title: "Industrial Facility Power Upgrade",
-      description: "Major electrical infrastructure upgrade for an industrial manufacturing facility including new main service panels, motor control centers, and machinery connections. We coordinated the installation to minimize downtime while upgrading the facility's electrical capacity to support expanded operations and new equipment installations.",
-      highlights: ["Main service upgrade", "Motor control systems", "Minimal downtime", "Expanded capacity"]
+      title: "Personalized Fitness Studio Electrical Design",
+      description: "Custom electrical infrastructure designed for a modern fitness studio focused on personalized training and small group strength coaching. This project featured dedicated power circuits for specialized equipment, adaptable lighting zones to create the perfect workout atmosphere, and integrated audio/visual systems to enhance training sessions and client engagement.",
+      highlights: ["Reliable power dedicated to fitness machines and recovery equipment", "Adjustable lighting designed to create the right mood and improve usability", "Smooth integration of audio and video gear to support coaching and classes", "Wiring and systems built with flexibility for future changes and expansion", "Energy-efficient solutions that support a healthy, sustainable environment"]
     }
   ] : [];
 
