@@ -126,15 +126,15 @@ const ServicePage = () => {
     },
     {
       image: "/lovable-uploads/commercialcallout4.jpg",
-      title: "Retail Store Electrical Installation",
-      description: "Comprehensive electrical solution for a modern retail space including track lighting systems, display lighting, and point-of-sale power infrastructure. We created an inviting shopping environment with strategic lighting placement while ensuring reliable power for all retail operations and security systems.",
+      title: "Professional Office Electrical Design",
+      description: "Turnkey electrical design and installation for a modern office workspace. This project included power and data distribution for individual workstations, collaborative spaces, and executive offices. Emphasis was placed on flexibility, energy efficiency, and future scalability to support evolving business needs.",
       highlights: ["Track lighting systems", "Display case lighting", "POS system wiring", "Security system integration"]
     },
     {
       image: "/lovable-uploads/commercialcallout3.jpg",
       title: "Commercial Kitchen Electrical Systems",
       description: "Specialized electrical installation for a commercial kitchen facility featuring high-capacity power systems for professional-grade equipment. Our team installed dedicated circuits for ovens, refrigeration units, and ventilation systems while ensuring all installations meet strict commercial kitchen safety codes and health department requirements.",
-      highlights: ["High-capacity circuits", "Commercial equipment wiring", "Code compliance", "Safety system integration"]
+      highlights: ["Dedicated power and data for conference rooms and AV systems", "Structured wiring for 50+ workstations", "LED lighting with occupancy sensors and daylight harvesting", "Clean, concealed cable management throughout the space"]
     },
     {
       image: "/lovable-uploads/commercialcallout1.jpg",
