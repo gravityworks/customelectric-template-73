@@ -128,7 +128,7 @@ const ServicePage = () => {
       image: "/lovable-uploads/commercialcallout4.jpg",
       title: "Professional Office Electrical Design",
       description: "Turnkey electrical design and installation for a modern office workspace. This project included power and data distribution for individual workstations, collaborative spaces, and executive offices. Emphasis was placed on flexibility, energy efficiency, and future scalability to support evolving business needs.",
-      highlights: ["Track lighting systems", "Display case lighting", "POS system wiring", "Security system integration"]
+      highlights: ["Dedicated power and data for conference rooms and AV systems", "Structured wiring for 50+ workstations", "LED lighting with occupancy sensors and daylight harvesting", "Clean, concealed cable management throughout the space"]
     },
     {
       image: "/lovable-uploads/commercialcallout3.jpg",
