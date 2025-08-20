@@ -125,7 +125,7 @@ const ServicePage = () => {
       highlights: ["Dedicated circuits for espresso machines, grinders, and refrigeration", "Code-compliant kitchen and service area wiring", "Integrated lighting controls for ambiance and energy savings", "Power layout for POS stations, charging bars, and Wi-Fi zones"]
     },
     {
-      image: "/lovable-uploads/commercialcallout4.jpg",
+      image: "/lovable-uploads/ProfessionalOfficeElectricalDesign.jpg",
       title: "Professional Office Electrical Design",
       description: "Turnkey electrical design and installation for a modern office workspace. This project included power and data distribution for individual workstations, collaborative spaces, and executive offices. Emphasis was placed on flexibility, energy efficiency, and future scalability to support evolving business needs.",
       highlights: ["Dedicated power and data for conference rooms and AV systems", "Structured wiring for 50+ workstations", "LED lighting with occupancy sensors and daylight harvesting", "Clean, concealed cable management throughout the space"]
