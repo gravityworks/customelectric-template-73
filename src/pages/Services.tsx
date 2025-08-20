@@ -132,9 +132,9 @@ const ServicePage = () => {
     },
     {
       image: "/lovable-uploads/commercialcallout3.jpg",
-      title: "Commercial Kitchen Electrical Systems",
-      description: "Specialized electrical installation for a commercial kitchen facility featuring high-capacity power systems for professional-grade equipment. Our team installed dedicated circuits for ovens, refrigeration units, and ventilation systems while ensuring all installations meet strict commercial kitchen safety codes and health department requirements.",
-      highlights: ["Dedicated power and data for conference rooms and AV systems", "Structured wiring for 50+ workstations", "LED lighting with occupancy sensors and daylight harvesting", "Clean, concealed cable management throughout the space"]
+      title: "Municipal Government Facility Electrical Upgrade",
+      description: "Comprehensive electrical design and modernization for a local government administrative and law enforcement complex. The project included electrical adjustments to accommodate a redesigned office layout and upgrades to lighting efficiency. The design ensured reliable power distribution, safety, and energy efficiency to support critical municipal functions.",
+      highlights: ["Electrical reconfiguration to support new office layout and workflows", "Energy-efficient LED lighting upgrades across administrative and secure zones", "Updated wiring systems meeting current electrical codes and safety standards", "Enhanced power distribution to improve reliability throughout the facility"]
     },
     {
       image: "/lovable-uploads/commercialcallout1.jpg",
