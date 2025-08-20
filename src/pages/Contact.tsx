@@ -17,8 +17,6 @@ const Contact = () => {
     // Add the external script for the embed
     const script = document.createElement('script');
     script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js';
-    script.setAttribute('clienthub_id', '4915b458-7ff6-4146-9d9e-7348ad70127a');
-    script.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/4915b458-7ff6-4146-9d9e-7348ad70127a/public/work_request/embedded_work_request_form');
     document.body.appendChild(script);
 
     // Cleanup function to remove the added elements
@@ -136,7 +134,7 @@ const Contact = () => {
       {/* Request a Quote Section */}
       <div className="container mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-3xl font-display text-estate-800 mb-8 text-center">Request a Quote</h2>
-        <div id="4915b458-7ff6-4146-9d9e-7348ad70127a"></div>
+        <div id="4915b458-7ff6-4146-9d9e-7348ad70127a" data-clienthub-id="4915b458-7ff6-4146-9d9e-7348ad70127a"></div>
       </div>
       
       <Footer />
