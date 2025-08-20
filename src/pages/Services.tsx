@@ -151,7 +151,7 @@ const ServicePage = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('/lovable-uploads/f3b2f24a-0488-4aad-ba08-8bcc47a1136a.png')`,
+            backgroundImage: `url('/lovable-uploads/4ecef2d9-e72d-4940-b7bb-a6cb1bb537c3.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             height: '100%'
