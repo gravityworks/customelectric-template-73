@@ -89,29 +89,6 @@ const About = () => {
           </div>
         </div>
         
-        {/* Team Section Placeholder */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-display text-estate-800 mb-10 text-center">Our Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Team member cards would go here */}
-            <div className="bg-estate-50 p-6 rounded-lg text-center">
-              <div className="w-32 h-32 rounded-full bg-estate-200 mx-auto mb-4"></div>
-              <h3 className="text-xl font-medium">Dean Bontrager</h3>
-              <p className="text-estate-600">Founder & Master Electrician</p>
-            </div>
-            <div className="bg-estate-50 p-6 rounded-lg text-center">
-              <div className="w-32 h-32 rounded-full bg-estate-200 mx-auto mb-4"></div>
-              <h3 className="text-xl font-medium">Sarah Johnson</h3>
-              <p className="text-estate-600">Operations Manager</p>
-            </div>
-            <div className="bg-estate-50 p-6 rounded-lg text-center">
-              <div className="w-32 h-32 rounded-full bg-estate-200 mx-auto mb-4"></div>
-              <h3 className="text-xl font-medium">Mike Reynolds</h3>
-              <p className="text-estate-600">Lead Technician</p>
-            </div>
-          </div>
-        </div>
-        
         {/* Work With Us Section */}
         <div className="mt-24 mb-16">
           <h2 className="text-3xl font-display text-estate-800 mb-10 text-center">Work With Us</h2>
